@@ -12,7 +12,5 @@ sealed class Todo with _$Todo {
   }) = _Todo;
 
   const factory Todo.empty() = _Empty;
-  const factory Todo.loading() = _Loading;
-  const factory Todo.error([String? message]) = _Error;
   factory Todo.fromJson(Map<String, dynamic> json) => _$TodoFromJson(json);
 }
