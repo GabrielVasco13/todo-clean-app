@@ -6,6 +6,5 @@ abstract interface class TodoRepository {
   AsyncResult<Unit> remove(String id);
   AsyncResult<Todo> update(Todo task);
   AsyncResult<Todo> get(String id);
-  AsyncResult<List<Todo>> getAll();
-  Stream<List<Todo>> todoObserver();
+  Stream<Todo> todoObserver();
 }
